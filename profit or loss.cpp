@@ -4,18 +4,22 @@ using namespace std;
 int main()
 {
     int cp;
-    cout<<"enter the cost price :";
+     cout<<"enter the cost price"<<endl; 
     cin>>cp;
-    int sp;
-    cout<<"enter the selling price :";
+   
+    
+     int sp;
+     cout<<"enter the selling price"<<endl;
     cin>>sp;
+  
+    
     if(sp>cp){
-        cout<<"profit";
+        cout<<"profit :"<<sp-cp;
     }
-    if(sp<cp){
-        cout<<"loss";
+    else if(sp<cp){
+    cout<<"loss :"<<cp-sp;
     }
-    if(sp==cp){
-        cout<<"No loss no profit";
+    else{
+        cout<<"equally disturabution";
     }
 }
